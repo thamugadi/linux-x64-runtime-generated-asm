@@ -1,2 +1,3 @@
-# linux-x64-polymorphic-asm-macros
-Useful macros for writing polymorphic code in GNU assembly for x64 linux.
+# linux-x64-runtime-generated-asm 
+Useful macros to generate machine code at runtime.
+Only for x64 Linux systems.
