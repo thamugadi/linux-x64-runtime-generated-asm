@@ -18,7 +18,7 @@ or rax, rcx
 .macro .make_exec_function addr size stacksize ##//stacksize < 0x80000000
 .exec_perm \addr \size
 .instr_op_imm_i32 0xec8148 \stacksize  ##// sub rsp, 0
-mov dword ptr [rdi],   0xe5894055      ##// push rbp; mov rbp, rsp
+mov qword ptr [rdi],   0xe5894055      ##// push rbp; mov rbp, rsp
 mov qword ptr [rdi+4], rax             ##// sub rsp, \stacksize
 add rdi, 11
 .endm
